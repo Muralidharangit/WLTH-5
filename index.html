@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run4Win Casino Clone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay"></div>
+
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <div class="sidebar-close d-lg-none"><i class="fas fa-times"></i></div>
+        <div class="sidebar-top">
+            <div class="nav-section-title">Game</div>
+            <div class="nav-item active"><i class="fas fa-home"></i></div>
+            <div class="nav-item"><i class="fas fa-gift"></i></div>
+            <div class="nav-item"><i class="fas fa-star"></i></div>
+            <div class="nav-item"><i class="far fa-gem"></i></div>
+            <div class="nav-item"><i class="fas fa-th-large"></i></div>
+            <div class="nav-item"><i class="fas fa-medal"></i></div>
+            <div class="nav-item"><i class="fas fa-broadcast-tower"></i></div>
+            <div class="nav-item"><i class="fas fa-gamepad"></i></div>
+            <div class="nav-item"><i class="fas fa-crown"></i></div>
+        </div>
+        <div class="sidebar-bottom">
+            <div class="nav-item"><i class="fas fa-sign-out-alt"></i></div>
+            <div class="nav-item"><i class="fas fa-headset text-pink"></i></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="top-header">
+            <div class="top-header-inner">
+                <div class="logo-area">
+                    <i class="fas fa-bars-staggered toggle-btn-header d-lg-none"></i>
+                    <span class="logo-text">run<span class="text-pink">4</span>win</span>
+                </div>
+                <div class="auth-buttons">
+                    <div class="deposit-wrapper d-none d-md-flex align-items-center">
+                        <div class="balance-display d-flex align-items-baseline me-2">
+                            <span class="balance-amount fw-bolder">1,250.00</span>
+                            <span class="currency-symbol ms-1">INR</span>
+                        </div>
+                        <a href="#" class="btn-deposit">
+                            <i class="fas fa-wallet text-white" style="font-size: 12px;"></i>
+                        </a>
+                    </div>
+                    <a href="#" class="btn-login-outline">LOG IN</a>
+                    <button class="btn-signup">SIGN UP</button>
+                    <i class="fas fa-comment chat-icon-header"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-wrapper">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-content">
+                    <div class="hero-subtitle">Welcome Package</div>
+                    <h1 class="hero-title">1200₹ + 300<br>Free Spins</h1>
+                    <button class="btn-hero-action mt-2">SIGN UP</button>
+                </div>
+
+                <!-- Embedded AI Generated Image -->
+                <img src="assets/hero.png" class="hero-image" alt="Cyberpunk Characters">
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-file-invoice-dollar stat-icon"></i>
+                        <div class="stat-text">
+                            <div class="stat-val">2m 43s</div>
+                            <div class="stat-label">Average cash out time</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-trophy stat-icon"></i>
+                        <div class="stat-text">
+                            <div class="stat-val">Best New Casino</div>
+                            <div class="stat-label">AskGamblers Awards 2023</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-coins stat-icon"></i>
+                        <div class="stat-text">
+                            <div class="stat-val">$345,250,985</div>
+                            <div class="stat-label">Total jackpot to be won</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-gamepad stat-icon"></i>
+                        <div class="stat-text">
+                            <div class="stat-val">45 new games</div>
+                            <div class="stat-label">13678 games total</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Games Promo -->
+            <section class="special-games-section">
+                <div class="section-header mb-3">
+                    <div class="section-title text-white">
+                        <i class="fas fa-gamepad text-white opacity-75"></i> Games
+                    </div>
+                    <div class="section-controls">
+                        <div class="slider-arrows">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-games-grid">
+                    <div class="sg-card sg-boxes">
+                        <div class="sg-tag">255 boxes</div>
+                        <div class="sg-content">
+                            <h3 class="sg-title">Boxes</h3>
+                            <p class="sg-desc">open mystery IRL boxes and get prizes</p>
+                        </div>
+                        <img src="assets/one.png" class="sg-img" alt="Boxes">
+                    </div>
+                    <div class="sg-card sg-battles">
+                        <div class="sg-tag">255 boxes</div>
+                        <div class="sg-content">
+                            <h3 class="sg-title">Battles</h3>
+                            <p class="sg-desc">open mystery IRL boxes and get prizes</p>
+                        </div>
+                        <img src="assets/two.png" class="sg-img" alt="Battles">
+                    </div>
+                    <div class="sg-card sg-boxes">
+                        <div class="sg-tag">255 boxes</div>
+                        <div class="sg-content">
+                            <h3 class="sg-title">Boxes</h3>
+                            <p class="sg-desc">open mystery IRL boxes and get prizes</p>
+                        </div>
+                        <img src="assets/three.png" class="sg-img" alt="Boxes">
+                    </div>
+                    <div class="sg-card sg-battles">
+                        <div class="sg-tag">255 boxes</div>
+                        <div class="sg-content">
+                            <h3 class="sg-title">Battles</h3>
+                            <p class="sg-desc">open mystery IRL boxes and get prizes</p>
+                        </div>
+                        <img src="assets/banner/five.png" class="sg-img" alt="Battles">
+                    </div>
+                    <div class="sg-card sg-boxes">
+                        <div class="sg-tag">255 boxes</div>
+                        <div class="sg-content">
+                            <h3 class="sg-title">Boxes</h3>
+                            <p class="sg-desc">open mystery IRL boxes and get prizes</p>
+                        </div>
+                        <img src="assets/banner/six.png" class="sg-img" alt="Boxes">
+                    </div>
+                </div>
+                <div class="slider-dots"></div>
+            </section>
+
+            <!-- Navigation Menu -->
+            <div class="secondary-nav-container">
+                <div class="secondary-nav">
+                    <a href="#" class="sec-nav-item active"><i class="fas fa-crown text-warning"></i> Lobby</a>
+                    <a href="#" class="sec-nav-item"><i class="fas fa-rocket"></i> Crash</a>
+                    <a href="#" class="sec-nav-item"><i class="fas fa-bomb"></i> Mines</a>
+                    <a href="#" class="sec-nav-item"><i class="fas fa-gem"></i> Jackpot</a>
+                    <a href="#" class="sec-nav-item"><i class="fas fa-trophy"></i> Tournaments</a>
+                    <a href="#" class="sec-nav-item"><i class="far fa-gem"></i> VIP Club</a>
+                </div>
+                <div class="nav-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <!-- Top Games Section -->
+            <section class="game-slider-section mt-4">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="far fa-thumbs-up text-pink"></i> Top games
+                    </div>
+                    <div class="section-controls">
+                        <a href="#" class="see-all">See all <i class="fas fa-chevron-right"></i></a>
+                        <div class="slider-arrows">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-cards-grid">
+                    <div class="game-card">
+                        <img src="assets/turbo/8.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/10.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/11.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/12.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/13.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/14.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/15.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/16.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/17.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/18.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/turbo/19.png" alt="Game">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Top Events / Sportsbook Section -->
+            <section class="top-events-section mt-5 p-4 rounded-4 position-relative">
+                <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                    <div class="section-title">
+                        <i class="fas fa-fire text-pink opacity-75"></i> Top events
+                    </div>
+                    <button class="btn fw-bold text-white rounded-pill px-4"
+                        style="background-color: var(--accent-pink); border: none; font-size: 14px;">Place Bet</button>
+                </div>
+
+                <!-- Filter Icons Row -->
+                <div class="events-filters d-flex gap-2 mb-4 overflow-auto pb-2">
+                    <button
+                        class="btn rounded-pill px-3 py-1 fw-bold text-white d-flex align-items-center gap-2 filter-btn active">
+                        <i class="fas fa-futbol"></i> Football
+                    </button>
+                    <button class="btn rounded-circle filter-btn icon-only"><i class="fas fa-gamepad"></i></button>
+                    <button class="btn rounded-circle filter-btn icon-only"><i class="fas fa-circle"></i></button>
+                    <button class="btn rounded-circle filter-btn icon-only"><i class="fas fa-gem"></i></button>
+                    <button class="btn rounded-circle filter-btn icon-only"><i class="fas fa-bullseye"></i></button>
+                    <button class="btn rounded-circle filter-btn icon-only"><i class="fas fa-crosshairs"></i></button>
+                    <button class="btn rounded-circle filter-btn icon-only"><i class="fas fa-user"></i></button>
+                    <button class="btn rounded-circle filter-btn icon-only"><i class="far fa-circle"></i></button>
+                    <button class="btn rounded-circle filter-btn icon-only"><i class="fas fa-asterisk"></i></button>
+                </div>
+
+                <div class="text-white mb-3 fw-bold fs-6">Football</div>
+
+                <!-- Betting Cards Slider -->
+                <div class="betting-cards-slider position-relative">
+                    <div class="betting-grid d-flex gap-3 overflow-auto pb-2">
+
+                        <!-- Card 1 -->
+                        <div class="betting-card p-3 rounded-3 flex-shrink-0">
+                            <div class="text-secondary small mb-1">Portugal. Primeira</div>
+                            <div class="text-white fw-bold mb-3">TIER 1</div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="rounded-circle bg-success me-2" style="width: 12px; height: 12px;"></span>
+                                <span class="text-white fw-semibold">Sporting CP</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-secondary me-2"
+                                    style="width: 12px; height: 12px;"></span>
+                                <span class="text-white fw-semibold">Vitoria Guimaraes</span>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">1</span>
+                                    <span class="text-white fw-bold">1.23</span>
+                                </button>
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">X</span>
+                                    <span class="text-white fw-bold">5.50</span>
+                                </button>
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">2</span>
+                                    <span class="text-white fw-bold">10.00</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="betting-card p-3 rounded-3 flex-shrink-0">
+                            <div class="text-secondary small mb-1">Argentina. Primera Division</div>
+                            <div class="text-white fw-bold mb-3">TIER 1</div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="rounded-circle bg-success me-2" style="width: 12px; height: 12px;"></span>
+                                <span class="text-white fw-semibold">Gimnasia y Esgrima de...</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-secondary me-2"
+                                    style="width: 12px; height: 12px;"></span>
+                                <span class="text-white fw-semibold">Defensa y Justicia</span>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">1</span>
+                                    <span class="text-white fw-bold">2.28</span>
+                                </button>
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">X</span>
+                                    <span class="text-white fw-bold">2.82</span>
+                                </button>
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">2</span>
+                                    <span class="text-white fw-bold">3.40</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="betting-card p-3 rounded-3 flex-shrink-0">
+                            <div class="text-secondary small mb-1">Spain. LaLiga 2</div>
+                            <div class="text-white fw-bold mb-3">TIER 1</div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="rounded-circle bg-success me-2" style="width: 12px; height: 12px;"></span>
+                                <span class="text-white fw-semibold">UD Almeria</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-secondary me-2"
+                                    style="width: 12px; height: 12px;"></span>
+                                <span class="text-white fw-semibold">CD Mirandes</span>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">1</span>
+                                    <span class="text-white fw-bold">1.44</span>
+                                </button>
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">X</span>
+                                    <span class="text-white fw-bold">4.50</span>
+                                </button>
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">2</span>
+                                    <span class="text-white fw-bold">5.70</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="betting-card p-3 rounded-3 flex-shrink-0">
+                            <div class="text-secondary small mb-1">Argentina. Primera Division</div>
+                            <div class="text-white fw-bold mb-3">TIER 1</div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="rounded-circle bg-success me-2" style="width: 12px; height: 12px;"></span>
+                                <span class="text-white fw-semibold">Gimnasia y Esgrima de...</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-secondary me-2"
+                                    style="width: 12px; height: 12px;"></span>
+                                <span class="text-white fw-semibold">Defensa y Justicia</span>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">1</span>
+                                    <span class="text-white fw-bold">2.28</span>
+                                </button>
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">X</span>
+                                    <span class="text-white fw-bold">2.82</span>
+                                </button>
+                                <button
+                                    class="btn flex-fill d-flex justify-content-between align-items-center rounded-3 p-2 odds-btn">
+                                    <span class="text-secondary small">2</span>
+                                    <span class="text-white fw-bold">3.40</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Slider Arrow for Betting Cards -->
+                    <button
+                        class="betting-slider-nav position-absolute d-flex align-items-center justify-content-center">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Live Games Section -->
+            <section class="game-slider-section mt-5">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-broadcast-tower text-pink"></i> Live
+                    </div>
+                    <div class="section-controls">
+                        <a href="#" class="see-all">See all <i class="fas fa-chevron-right"></i></a>
+                        <div class="slider-arrows">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="live-cards-grid">
+                    <div class="live-card">
+                        <img src="assets/slotegator/24.png" alt="Live Game">
+                    </div>
+                    <div class="live-card">
+                        <img src="assets/slotegator/25.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/26.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/27.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/28.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/29.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/30.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/31.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/32.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/33.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/34.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/35.png" alt="Live Game">
+                    </div>
+                     <div class="live-card">
+                        <img src="assets/slotegator/36.png" alt="Live Game">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bonus Cards Section -->
+            <section class="bonus-section mt-5">
+                <div class="section-header mb-3">
+                    <div class="section-title">
+                        <i class="fas fa-gift text-pink"></i> Welcome Bonuses
+                    </div>
+                </div>
+                <div class="bonus-grid">
+                    <div class="bonus-card">
+                        <div class="bonus-diamond-container">
+                            <img src="assets/hero.png" class="bonus-img" alt="Bonus Character">
+                        </div>
+                        <div class="bonus-tier">1st Deposit Bonus</div>
+                        <div class="bonus-amount">300₹ + 100 Free Spins</div>
+                        <ul class="bonus-features">
+                            <li><i class="fas fa-check text-success"></i> Instantly</li>
+                            <li><i class="fas fa-check text-success"></i> Deposit at least 20₹</li>
+                            <li><i class="fas fa-check text-success"></i> 100% up to 300₹</li>
+                            <li><i class="fas fa-check text-success"></i> 500 free spins every 24 hours</li>
+                        </ul>
+                        <button class="btn-signup w-100">SIGN UP</button>
+                        <div class="bonus-tc">Bonus T&C</div>
+                    </div>
+                    <div class="bonus-card">
+                        <div class="bonus-diamond-container">
+                            <img src="assets/hero-1.png" class="bonus-img" alt="Bonus Character">
+                        </div>
+                        <div class="bonus-tier">2nd Deposit Bonus</div>
+                        <div class="bonus-amount">400₹ + 100 Free Spins</div>
+                        <ul class="bonus-features">
+                            <li><i class="fas fa-check text-success"></i> Instantly</li>
+                            <li><i class="fas fa-check text-success"></i> Deposit at least 20₹</li>
+                            <li><i class="fas fa-check text-success"></i> 50% up to 400₹</li>
+                            <li><i class="fas fa-check text-success"></i> 200 free spins every 24 hours</li>
+                        </ul>
+                        <button class="btn-signup w-100">SIGN UP</button>
+                        <div class="bonus-tc">Bonus T&C</div>
+                    </div>
+                    <div class="bonus-card">
+                        <div class="bonus-diamond-container">
+                            <img src="assets/hero_characters.png" class="bonus-img" alt="Bonus Character">
+                        </div>
+                        <div class="bonus-tier">3rd Deposit Bonus</div>
+                        <div class="bonus-amount">400₹ + 100 Free Spins</div>
+                        <ul class="bonus-features">
+                            <li><i class="fas fa-check text-success"></i> Instantly</li>
+                            <li><i class="fas fa-check text-success"></i> Deposit at least 20₹</li>
+                            <li><i class="fas fa-check text-success"></i> 50% up to 500₹</li>
+                            <li><i class="fas fa-check text-success"></i> 20 free spins every 24 hours</li>
+                        </ul>
+                        <button class="btn-signup w-100">SIGN UP</button>
+                        <div class="bonus-tc">Bonus T&C</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Spribe Games -->
+            <section class="game-slider-section mt-5">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-gift text-pink"></i> Spribe Games
+                    </div>
+                    <div class="section-controls">
+                        <a href="#" class="see-all">See all <i class="fas fa-chevron-right"></i></a>
+                        <div class="slider-arrows">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-cards-grid">
+                    <div class="game-card">
+                        <img src="assets/spribe/21.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/22.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/23.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/24.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/25.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/26.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/27.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/28.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/29.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/spribe/30.png" alt="Game">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Drops and wins -->
+            <section class="game-slider-section mt-5">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-trophy text-pink"></i> Drops and wins
+                    </div>
+                    <div class="section-controls">
+                        <a href="#" class="see-all">See all <i class="fas fa-chevron-right"></i></a>
+                        <div class="slider-arrows">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-cards-grid">
+                    <div class="game-card">
+                        <img src="assets/new/1.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/new/2.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/new/9.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/new/4.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/new/5.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/new/6.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/new/7.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/new/10.png" alt="Game">
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/new/8.png" alt="Game">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Providers -->
+            <section class="providers-section mt-5">
+                <div class="section-header">
+                    <div class="section-title">
+                        <i class="fas fa-users text-pink"></i> Providers
+                    </div>
+                    <div class="section-controls">
+                        <button class="btn-login-outline">More providers <i class="fas fa-chevron-right ms-1"
+                                style="font-size: 10px;"></i></button>
+                    </div>
+                </div>
+                <div class="providers-grid">
+                    <div class="provider-box">Evolution</div>
+                    <div class="provider-box">Pragmatic Play</div>
+                    <div class="provider-box">Nolimit City</div>
+                    <div class="provider-box">PLAY'N GO</div>
+                    <div class="provider-box">BGaming</div>
+                    <div class="provider-box">Hacksaw Gaming</div>
+                    <div class="provider-box">GoldenRace</div>
+                    <div class="provider-box">STHLMGAMING</div>
+                    <div class="provider-box">Gato Gaming</div>
+                    <div class="provider-box">Live Slot</div>
+                    <div class="provider-box">Slotopia</div>
+                    <div class="provider-box">Maxwin</div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="casino-footer mt-5">
+                <div class="payment-methods">
+                    <span>SOFORT</span>
+                    <span>BB GAMES</span>
+                    <span>mastercard</span>
+                    <span>eKasino</span>
+                    <span>gaming</span>
+                    <span>Ethereum</span>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="logo-area mb-3">
+                            <span class="logo-text text-white">run<span class="text-pink">4</span>win</span>
+                        </div>
+                        <p class="footer-desc">
+                            We are a cosmic casino with thousands of games, high-class promotions, 24/7 support and
+                            instantaneous payouts. Run4Win: play the way you want!
+                        </p>
+                        <div class="social-icons">
+                            <i class="fab fa-facebook text-pink"></i>
+                            <i class="fab fa-instagram text-pink"></i>
+                            <i class="fab fa-linkedin text-pink"></i>
+                            <i class="fab fa-youtube text-pink"></i>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h5>RUN4WIN</h5>
+                        <a href="#">Promotions</a>
+                        <a href="#">Payments</a>
+                        <a href="#">Loyalty</a>
+                        <a href="#">About Us</a>
+                    </div>
+                    <div class="footer-links">
+                        <h5>GENERAL</h5>
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">KYC</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                    <div class="footer-links">
+                        <h5>HELP</h5>
+                        <a href="#">Game rules</a>
+                        <a href="#">Complaints</a>
+                        <a href="#">Affiliates</a>
+                        <a href="#">Referral</a>
+                        <a href="#">Install App</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-bottom-nav d-lg-none">
+        <a href="#" class="bottom-nav-item active">
+            <i class="fas fa-border-all"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Live</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-dice"></i>
+            <span>Casino</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-id-badge"></i>
+            <span>Live Dealers</span>
+        </a>
+        <a href="#" class="bottom-nav-item ">
+            <i class="fas fa-plane"></i>
+            <span>Aviator</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-gift"></i>
+            <span>Bonuses</span>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Offcanvas toggle logic
+            const toggleBtn = document.querySelector('.toggle-btn-header');
+            const leftSidebar = document.querySelector('.left-sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            const closeBtn = document.querySelector('.sidebar-close');
+
+            if (toggleBtn && leftSidebar && overlay) {
+                toggleBtn.addEventListener('click', () => {
+                    leftSidebar.classList.toggle('show');
+                    overlay.classList.toggle('show');
+                });
+
+                overlay.addEventListener('click', () => {
+                    leftSidebar.classList.remove('show');
+                    overlay.classList.remove('show');
+                });
+
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', () => {
+                        leftSidebar.classList.remove('show');
+                        overlay.classList.remove('show');
+                    });
+                }
+            }
+
+            // Slider arrows logic
+            const sectionHeaders = document.querySelectorAll('.section-header');
+            sectionHeaders.forEach(header => {
+                const arrowsContainer = header.querySelector('.slider-arrows');
+                if (arrowsContainer) {
+                    const leftBtn = arrowsContainer.querySelectorAll('button')[0];
+                    const rightBtn = arrowsContainer.querySelectorAll('button')[1];
+                    const grid = header.nextElementSibling;
+
+                    if (leftBtn && grid) {
+                        leftBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const gap = parseInt(window.getComputedStyle(grid).gap) || 0;
+                            const itemWidth = grid.firstElementChild ? grid.firstElementChild.offsetWidth + gap : 400;
+                            grid.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+                        });
+                    }
+                    if (rightBtn && grid) {
+                        rightBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const gap = parseInt(window.getComputedStyle(grid).gap) || 0;
+                            const itemWidth = grid.firstElementChild ? grid.firstElementChild.offsetWidth + gap : 400;
+                            grid.scrollBy({ left: itemWidth, behavior: 'smooth' });
+                        });
+                    }
+                }
+            });
+
+            // Auto slide for Special Games Promo
+            const specialGamesGrid = document.querySelector('.special-games-grid');
+            const sliderDotsContainer = document.querySelector('.slider-dots');
+
+            if (specialGamesGrid) {
+                // Generate dots dynamically
+                const itemsCount = specialGamesGrid.children.length;
+                if (sliderDotsContainer && itemsCount > 0) {
+                    for (let i = 0; i < itemsCount; i++) {
+                        const dot = document.createElement('div');
+                        dot.classList.add('slider-dot');
+                        if (i === 0) dot.classList.add('active');
+
+                        // Click dot to navigate
+                        dot.addEventListener('click', () => {
+                            const gap = parseInt(window.getComputedStyle(specialGamesGrid).gap) || 0;
+                            const itemWidth = specialGamesGrid.firstElementChild ? specialGamesGrid.firstElementChild.offsetWidth + gap : 400;
+                            specialGamesGrid.scrollTo({ left: itemWidth * i, behavior: 'smooth' });
+                        });
+                        sliderDotsContainer.appendChild(dot);
+                    }
+
+                    // Update active dot on scroll
+                    specialGamesGrid.addEventListener('scroll', () => {
+                        const gap = parseInt(window.getComputedStyle(specialGamesGrid).gap) || 0;
+                        const itemWidth = specialGamesGrid.firstElementChild ? specialGamesGrid.firstElementChild.offsetWidth + gap : 400;
+                        const activeIndex = Math.round(specialGamesGrid.scrollLeft / itemWidth);
+
+                        const dots = sliderDotsContainer.querySelectorAll('.slider-dot');
+                        dots.forEach((dot, index) => {
+                            if (index === activeIndex) {
+                                dot.classList.add('active');
+                            } else {
+                                dot.classList.remove('active');
+                            }
+                        });
+                    });
+                }
+
+                let autoSlideInterval = setInterval(autoSlide, 3000);
+
+                function autoSlide() {
+                    const gap = parseInt(window.getComputedStyle(specialGamesGrid).gap) || 0;
+                    const itemWidth = specialGamesGrid.firstElementChild ? specialGamesGrid.firstElementChild.offsetWidth + gap : 400;
+
+                    // Check if we've reached the end (with a 10px buffer)
+                    if (specialGamesGrid.scrollLeft + specialGamesGrid.clientWidth >= specialGamesGrid.scrollWidth - 10) {
+                        specialGamesGrid.scrollTo({ left: 0, behavior: 'smooth' }); // Loop back to start
+                    } else {
+                        specialGamesGrid.scrollBy({ left: itemWidth, behavior: 'smooth' });
+                    }
+                }
+
+                // Pause auto-sliding when the user hovers over the slider
+                specialGamesGrid.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+                specialGamesGrid.addEventListener('mouseleave', () => {
+                    autoSlideInterval = setInterval(autoSlide, 3000);
+                });
+            }
+
+            // Top Events Betting Slider logic
+            const bettingSliderNav = document.querySelector('.betting-slider-nav');
+            const bettingGrid = document.querySelector('.betting-grid');
+            if (bettingSliderNav && bettingGrid) {
+                bettingSliderNav.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const gap = 16; // gap-3 is 1rem (16px)
+                    const itemWidth = bettingGrid.firstElementChild ? bettingGrid.firstElementChild.offsetWidth + gap : 316;
+                    bettingGrid.scrollBy({ left: itemWidth, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
